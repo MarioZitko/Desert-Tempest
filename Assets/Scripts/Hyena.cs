@@ -11,6 +11,7 @@ public class Hyena : MonoBehaviour
     public Animator animator;
     int currentHealth;
     public Transform player;
+    public GameObject player1;
     public bool isFlipped = false;
     public LayerMask attackMask;
     public Transform attackPointHyena;
@@ -20,6 +21,8 @@ public class Hyena : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
         currentHealth = maxHealth;
+        player1 = GameObject.Find("Player");
+        player = player1.transform;
 
     }
 

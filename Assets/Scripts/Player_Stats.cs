@@ -115,6 +115,20 @@ public class Player_Stats : MonoBehaviour
 
     public void useHPpot(){
 
+        if (pyramidInterior == null){
+            if (hpPots>=1){
+
+                UpdateHealth(100f);
+                hpPots -= 1;
+                hpPart.Play();
+            }
+
+            potHpText.text = hpPots.ToString();
+
+        }
+
+        else{
+
         if (pyramidInterior.activeSelf){
             if (coins>=1){
                 updateGold(-1);
@@ -134,10 +148,26 @@ public class Player_Stats : MonoBehaviour
         }
         
         potHpText.text = hpPots.ToString();
+        }
     }
 
 
     public void useStamPot(){
+
+        if (pyramidInterior == null){
+
+
+            if (stamPots>=1){
+
+                UpdateStamina(100f);
+                stamPots -= 1;
+                stamPart.Play();
+            }
+
+            potStamText.text = stamPots.ToString();
+        }
+
+        else{
 
         if (pyramidInterior.activeSelf){
 
@@ -159,6 +189,7 @@ public class Player_Stats : MonoBehaviour
         }
         
         potStamText.text = stamPots.ToString();
+        }
     }
 
     // Update is called once per frame
