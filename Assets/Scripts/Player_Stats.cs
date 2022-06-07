@@ -10,10 +10,17 @@ public class Player_Stats : MonoBehaviour
     public float maxHealth = 100f;
     float stamina = 0f;
     public float maxStamina = 100f;
-    public int coins = 0;
+    public static int coins = 0;
+    public int hpPots = 0;
+    public int stamPots = 0;
     public Animator animator;
     public HealthBar healthBar;
     public StaminaBar staminaBar;
+    public GameObject pyramidInterior;
+    public ParticleSystem hpPart;
+    public ParticleSystem stamPart;
+    public TextMeshProUGUI potHpText;
+    public TextMeshProUGUI potStamText;
 
     void Start()
     {
@@ -22,6 +29,11 @@ public class Player_Stats : MonoBehaviour
 
         stamina = maxStamina;
         staminaBar.SetMaxStamina(maxStamina);
+
+        CoinCounter.instance.setCoins(coins);
+        
+        potStamText.text = stamPots.ToString();
+        potHpText.text = hpPots.ToString();
 
     }
 
@@ -87,11 +99,66 @@ public class Player_Stats : MonoBehaviour
     public void updateGold(int mod){
 
         if (mod<0){
-        if((coins-mod)<0){coins = 0;}}
+            if((coins-mod)<0){
+                coins = 0;
+            }
+            else{
+                coins += mod;
+            }
+        }
+
         else{coins += mod;}
 
         CoinCounter.instance.setCoins(coins);
         
+    }
+
+    public void useHPpot(){
+
+        if (pyramidInterior.activeSelf){
+            if (coins>=1){
+                updateGold(-1);
+                hpPots += 1;
+            }
+        }
+
+        else {
+
+            if (hpPots>=1){
+
+                UpdateHealth(100f);
+                hpPots -= 1;
+                hpPart.Play();
+            }
+            
+        }
+        
+        potHpText.text = hpPots.ToString();
+    }
+
+
+    public void useStamPot(){
+
+        if (pyramidInterior.activeSelf){
+
+            if (coins>=1){
+                updateGold(-1);
+                stamPots += 1;
+            }
+        }
+
+        else {
+
+            if (stamPots>=1){
+
+                UpdateStamina(100f);
+                stamPots -= 1;
+                stamPart.Play();
+            }
+            
+        }
+        
+        potStamText.text = stamPots.ToString();
     }
 
     // Update is called once per frame

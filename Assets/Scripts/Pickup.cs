@@ -16,6 +16,7 @@ public class Pickup : MonoBehaviour
             if (currentObject == PickupObject.COIN){
 
                 playerStats.updateGold(1);
+                
             }
 
             Destroy(gameObject);
