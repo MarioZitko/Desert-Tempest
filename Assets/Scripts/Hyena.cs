@@ -49,10 +49,10 @@ public class Hyena : MonoBehaviour
     IEnumerator delete(){
 
         yield return new WaitForSeconds (2);
-        Destroy(gameObject);
         Vector3 pos = transform.position;
         pos.y += 0.5f;
         Instantiate(lootDrop, pos, Quaternion.identity);
+        Destroy(gameObject);
     }
 
 
