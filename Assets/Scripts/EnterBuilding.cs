@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class EnterBuilding : MonoBehaviour
 {
+
     public GameObject pyramid;
     public GameObject pyramidInterior;
+
 
     void OnTriggerEnter2D(Collider2D other){
 

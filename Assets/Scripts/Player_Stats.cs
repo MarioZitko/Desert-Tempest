@@ -113,6 +113,11 @@ public class Player_Stats : MonoBehaviour
         
     }
 
+    public int getCoins(){
+
+        return coins;
+    }
+
     public void useHPpot(){
 
         if (pyramidInterior == null){
