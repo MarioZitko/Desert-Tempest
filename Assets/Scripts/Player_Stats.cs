@@ -113,6 +113,12 @@ public class Player_Stats : MonoBehaviour
         
     }
 
+    public void setCoins(int setc){
+
+        coins = setc;
+        CoinCounter.instance.setCoins(coins);
+    }
+
     public int getCoins(){
 
         return coins;
