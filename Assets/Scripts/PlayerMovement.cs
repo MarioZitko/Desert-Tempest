@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour{
 
     public CharacterController2D controller;
     public Animator animator;
     public Player_Stats playerStats;
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;
 
     public Joystick joystick;
 
@@ -21,6 +24,8 @@ public class PlayerMovement : MonoBehaviour{
     // Start is called before the first frame update
     void Start()
     {
+
+        respawnPoint = transform.position;
         
     }
 
@@ -82,6 +87,9 @@ public class PlayerMovement : MonoBehaviour{
             crouch = false;
         }
 
+
+        fallDetector.transform.position = new Vector2(transform.position.x, fallDetector.transform.position.y);
+
     }
 
     public void onLanding(){
@@ -93,6 +101,24 @@ public class PlayerMovement : MonoBehaviour{
 
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
+    }
+
+    public void respawn(){
+
+        SceneManager.LoadScene("Game");
+        Destroy (GameObject.Find("Player"));
+        Destroy (GameObject.Find("fallDetector"));
+        Destroy (GameObject.Find("UI and Camera"));
+        
+        transform.position = respawnPoint;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision){
+
+        if (collision.name == "fallDetector"){
+
+            respawn();
+        }
     }
 }
 

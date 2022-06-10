@@ -9,6 +9,7 @@ public class NextLevel : MonoBehaviour
     public GameObject player;
     public Player_Stats playerStats;
     public GameObject UI;
+    public GameObject fallDetector;
 
 
     void Start(){
@@ -26,6 +27,7 @@ public class NextLevel : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             DontDestroyOnLoad(this.player);
             DontDestroyOnLoad(this.UI);
+            DontDestroyOnLoad(this.fallDetector);
         }
     }
 }

@@ -279,6 +279,7 @@ MonoBehaviour:
   controller: {fileID: 8049256837529907199}
   animator: {fileID: 8049256837529907198}
   playerStats: {fileID: 0}
+  fallDetector: {fileID: 5716512405174544640, guid: 32cf649b138db814f87f31c7177ff317, type: 3}
   joystick: {fileID: 0}
   walkSpeed: 3
   runSpeed: 7
@@ -342,8 +343,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   maxStamina: 100
-  coins: 0
+  hpPots: 0
+  stamPots: 0
   animator: {fileID: 8049256837529907198}
   healthBar: {fileID: 0}
   staminaBar: {fileID: 0}
-  textCoins: {fileID: 7157280813708071631, guid: 54111e2908cebad4f859e6a398d256e0, type: 3}
+  pyramidInterior: {fileID: 0}
+  hpPart: {fileID: 0}
+  stamPart: {fileID: 0}
+  potHpText: {fileID: 0}
+  potStamText: {fileID: 0}
