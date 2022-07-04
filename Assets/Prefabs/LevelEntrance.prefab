@@ -74,3 +74,4 @@ MonoBehaviour:
   playerStats: {fileID: 8049256837529907136, guid: bb33a37978541af4d843f02f03bebd42, type: 3}
   UI: {fileID: 5899468595159181926, guid: 77a6322cede671045abd649557ffd68a, type: 3}
   fallDetector: {fileID: 5716512405174544640, guid: 32cf649b138db814f87f31c7177ff317, type: 3}
+  pauseMeni: {fileID: 2362433895258152043, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}

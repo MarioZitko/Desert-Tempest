@@ -18,7 +18,6 @@ public class Pickup : MonoBehaviour
                 playerStats.updateGold(1);
                 
             }
-
             Destroy(gameObject);
         }
     }

@@ -12,6 +12,7 @@ public class NextLevel : MonoBehaviour
     public GameObject fallDetector;
 
 
+
     void Start(){
 
         int PlayerCoins = PlayerPrefs.GetInt("PlayerCoins", 0);
@@ -28,6 +29,7 @@ public class NextLevel : MonoBehaviour
             DontDestroyOnLoad(this.player);
             DontDestroyOnLoad(this.UI);
             DontDestroyOnLoad(this.fallDetector);
+
         }
     }
 }

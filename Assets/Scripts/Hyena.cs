@@ -20,6 +20,7 @@ public class Hyena : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
+
         currentHealth = maxHealth;
         player1 = GameObject.Find("Player");
         player = player1.transform;
