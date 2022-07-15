@@ -5667,7 +5667,7 @@ Transform:
   m_LocalScale: {x: 0.05610752, y: 0.055406176, z: 0.05610752}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &559006566
 Rigidbody2D:
@@ -5701,6 +5701,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &649457948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2362433893868100934, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}
+  m_PrefabInstance: {fileID: 2362433894703987979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &695604784
 GameObject:
   m_ObjectHideFlags: 0
@@ -12074,10 +12079,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2362433894530846313, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Load
+      objectReference: {fileID: 0}
     - target: {fileID: 2362433895258152043, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2362433895258152046, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 649457948}
     - target: {fileID: 2362433895258152047, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12088,7 +12101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2362433895258152047, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2362433895258152047, guid: 36bc120773c191a4b9e3dd5875e08404, type: 3}
       propertyPath: m_AnchorMax.x

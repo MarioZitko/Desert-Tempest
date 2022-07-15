@@ -35,9 +35,10 @@ public class Player_Stats : MonoBehaviour
 
     public void UpdateHealth(float mod){
         if (mod<0){
-                animator.SetTrigger("Hurt");
-                UpdateStamina(mod/2);
-            }
+            animator.SetTrigger("Hurt");
+            UpdateStamina(mod/2);
+        }
+        health += mod;
 
         if (health > maxHealth){
             health = maxHealth;
