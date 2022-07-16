@@ -7,14 +7,14 @@ Desert tempest is a Rougelite 2D Platformer developed for the Android platform i
 
 ## Features of the game
 
-The game is completely functional, the main character has its own health, stamina and coin values. The enemy has its own AI so they are completely functional. Everything has its own animations and works. It recieved and excellent grade for my undergraduate thesis. The code is modular and can be reused for multiple game objects and items making it easier to add new content
+The game is completely functional, the main character has its own health, stamina and coin values. The enemy has its own AI so they are completely functional. Everything has its own animations and works. It recieved and excellent grade for my undergraduate thesis. The code is modular and can be reused for multiple game objects and items making it easier to add new content.
 
 
 ## How to install
 
-1. Install unity version 2020.3.21f1
+1. Install Unity version 2020.3.21f1
 2. Extract the game files into your specified folder
-3. Select the folder with the extracted game via Unity Hub by selecting "Open Project"
+3. Select the folder with the extracted game in Unity Hub by selecting "Open Project"
 
 
 ## TO-DO List
