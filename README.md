@@ -1,6 +1,6 @@
 # Desert-Tempest
 
-Desert tempest is an android mobile game developed in Unity using C# for the needs of my undergraduate thesis.
+Desert tempest is a Rougelite 2D Platformer developed for the Android platform in Unity using C# for the needs of my undergraduate thesis.
 
 ![Image of the game](https://i.ibb.co/P5C7gw5/Screenshot-2.jpg)
 
