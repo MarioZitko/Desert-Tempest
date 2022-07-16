@@ -7,7 +7,8 @@ Desert tempest is an android mobile game developed in Unity using C# for the nee
 
 ## Features of the game
 
-The game is completely functional, the main character has its own hp, stamina and coin values. The enemy has its own AI so they are completely functional. Everything has its own animations and works. It recieved and excellent grade for my undergraduate thesis.
+The game is completely functional, the main character has its own health, stamina and coin values. The enemy has its own AI so they are completely functional. Everything has its own animations and works. It recieved and excellent grade for my undergraduate thesis. The code is modular and can be reused for multiple game objects and items making it easier to add new content
+
 
 ## How to install
 
@@ -18,11 +19,11 @@ The game is completely functional, the main character has its own hp, stamina an
 
 ## TO-DO List
 
-[] Procedural automatic generation of terrain and enemies
-[] More characters
-[] Bosses
-[] Items
-[] Aspect ratio and fixes so it works perfectly on Android
-[] Better and safer saving
-[] Google Play integration
-[] Ads for the purposes of reviving or more money
+- [] Procedural automatic generation of terrain and enemies
+- [] More characters
+- [] Bosses
+- [] Items
+- [] Aspect ratio and fixes so it works perfectly on Android
+- [] Better and safer saving
+- [] Google Play integration
+- [] Ads for the purposes of reviving or more money
