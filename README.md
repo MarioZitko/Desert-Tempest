@@ -19,11 +19,11 @@ The game is completely functional, the main character has its own health, stamin
 
 ## TO-DO List
 
-- [] Procedural automatic generation of terrain and enemies
-- [] More characters
-- [] Bosses
-- [] Items
-- [] Aspect ratio and fixes so it works perfectly on Android
-- [] Better and safer saving
-- [] Google Play integration
-- [] Ads for the purposes of reviving or more money
+- [ ] Procedural automatic generation of terrain and enemies
+- [ ] More characters
+- [ ] Bosses
+- [ ] Items
+- [ ] Aspect ratio and fixes so it works perfectly on Android
+- [ ] Better and safer saving
+- [ ] Google Play integration
+- [ ] Ads for the purposes of reviving or more money
